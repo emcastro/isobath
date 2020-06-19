@@ -16,3 +16,5 @@ fi
 source python/bin/activate
 
 pip install -r requirement.txt
+
+ansible-playbook -i ansible/local_inventory.yml ansible/setup_playbook.yml
