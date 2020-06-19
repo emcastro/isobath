@@ -1,0 +1,19 @@
+
+- hosts: dev_station
+  gather_facts: no
+  tasks:
+
+  - name: Create datadir
+    file:
+      path: '{{ data_dir }}'
+      state: directory
+
+  - name: Download
+    include_tasks:
+      file: download_task.yml
+      apply:
+        vars:
+          archive_url: "{{ item }}"
+    loop:
+    - https://charts.noaa.gov/ENCs/MA_ENCs.zip
+    - http://pubs.usgs.gov/of/2012/1157/GIS_catalog/SourceData/bathy/bathy_30m.zip
