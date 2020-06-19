@@ -1,17 +1,27 @@
-# IsoBath
+IsoBath
+=======
 
 Construction d'isobath en fonction de contraintes diverses à partir d'un grid bathymétrique
 
-## Compétences
+# Compétences
 
 * Découper des fichiers de grids et de vectoriels pour faire des tests du des petits volumes
 * Lister les resources de données (pour ne pas les mettre dans Git)
 * Tester les algos de GRASS, GDAL et SAGA
 
-## Code à écrire
-* 
+# Données de test
 
-## Poste de dev
+## Au large de boston
+
+# Trucs
+
+## Import de données dans PostGIS
+_N'a pas semblé avantageux avec QGIS_
+```bash
+raster2pgsql -I -C -M -F -t auto ~/win/Documents/local/Bathymap/bathy_30m/navd_bath_30m/w001001.adf | psql -U admin -d gis -h localhost
+```
+
+# Poste de dev
 
 * Ubuntu 20.04 (focal)
 * QGIS 3.12 Bucaresti
@@ -22,7 +32,9 @@ Construction d'isobath en fonction de contraintes diverses à partir d'un grid b
     sudo apt install qgis qgis-plugin-grass
     ```
 
- * SAGA 7.6.3 (à voir)
+ * SAGA 7.3.0
+   * Installation à partir des paquets Debian/Ubuntu
+ * SAGA 7.6.3 (utilité voir)
    * Installé à partir des sources
    * ```bash
      sudo apt-get install libwxgtk3.0-gtk3-dev libtiff5-dev libgdal-dev libproj-dev libexpat-dev wx-common libogdi-dev unixodbc-dev 
@@ -42,3 +54,16 @@ Construction d'isobath en fonction de contraintes diverses à partir d'un grid b
      sudo add-apt-repository 'deb https://dl.winehq.org/wine-builds/ubuntu/ focal main'
      wget -O - https://dl.winehq.org/wine-builds/winehq.key | sudo apt-key  add -
      sudo apt install --install-recommends winehq-stable
+
+ * Pour faire marche `raster2psql`
+   * Installation de Postgis complet et désactivation du service
+   * ```
+     sudo apt install postgis
+     sudo systemctl stop postgresql
+     sudo systemctl disable postgresql
+     ``` 
+# Docker
+
+## PostGIS
+
+C.f. le `docker-compose.yml` du répertoire `docker` 

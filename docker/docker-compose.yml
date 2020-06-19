@@ -1,0 +1,19 @@
+version: '3.7'
+services:
+  postgis:
+    image: kartoza/postgis:latest
+    ports: 
+      - 5432:5432
+    environment:
+      - POSTGRES_USER=admin
+      - POSTGRES_PASSWORD=admin
+
+  pgadmin:
+    image: dpage/pgadmin4:4.22
+    environment:
+      - PGADMIN_DEFAULT_EMAIL=admin
+      - PGADMIN_DEFAULT_PASSWORD=admin
+    ports:
+      - 3456:80
+    volumes:
+      - ./pgadmin_servers.json:/pgadmin4/servers.json
