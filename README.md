@@ -15,7 +15,10 @@ Construction d'isobath en fonction de contraintes diverses à partir d'un grid b
 
 * ENC : US4MA13M   
   Dans le zip https://charts.noaa.gov/ENCs/MA_ENCs.zip
-* Bathy : 
+* Bathy : http://pubs.usgs.gov/of/2012/1157/GIS_catalog/SourceData/bathy/bathy_30m.zip
+
+La zone couverte est accessible via M_COVR avec CATCOV = 1 (valider qu'il est unique)
+
 
 # Trucs
 
