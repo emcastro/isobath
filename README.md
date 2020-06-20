@@ -3,6 +3,14 @@ IsoBath
 
 Construction d'isobath en fonction de contraintes diverses à partir d'un grid bathymétrique
 
+# TODO
+
+* Découpage (cf. compétences) sur la zone US4MA13M
+
+# Docs
+
+* https://pcjericks.github.io/py-gdalogr-cookbook/
+
 # Compétences
 
 * Découper des fichiers de grids et de vectoriels pour faire des tests du des petits volumes
