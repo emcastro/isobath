@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -e
+
 # Check required tools
 [[ -z $(command -v python3) ]] && echo python not available && FAIL=1
 [[ -z $(command -v pip3) ]] && echo python not available && FAIL=1
