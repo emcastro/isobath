@@ -15,6 +15,9 @@ Construction d'isobath en fonction de contraintes diverses à partir d'un grid b
 # Docs
 
 * https://pcjericks.github.io/py-gdalogr-cookbook/
+* https://gdal.org/api/index.html#id3
+* https://www.programcreek.com/python/index/8908/osgeo.ogr
+* https://www.programcreek.com/python/index/6873/gdal
 
 # Compétences
 
