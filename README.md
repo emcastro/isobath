@@ -8,7 +8,9 @@ Construction d'isobath en fonction de contraintes diverses à partir d'un grid b
 * Découpage (cf. compétences) sur la zone US4MA13M
   * `gdalwarp -of GTiff -tr 30.0 -30.0 -tap -cutline /tmp/processing_tUFKXm/d2141618117a4f748786662cf68c1f29/MASK.shp -cl MASK -crop_to_cutline /home/ecastro/isobath/data/navd_bath_30m /tmp/processing_tUFKXm/5b1965931e864ffdb686f28e1e27d838/OUTPUT.tif`
   * https://pcjericks.github.io/py-gdalogr-cookbook/raster_layers.html#clip-a-geotiff-with-shapefile
+  * https://www.youtube.com/watch?v=n33MswNARkE
 
+* Apprendre à écrire des fichers Raster & Vector
 
 # Docs
 
