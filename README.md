@@ -44,6 +44,21 @@ _N'a pas semblé avantageux avec QGIS_
 raster2pgsql -I -C -M -F -t auto ~/win/Documents/local/Bathymap/bathy_30m/navd_bath_30m/w001001.adf | psql -U admin -d gis -h localhost
 ```
 
+## Création de données OGR
+
+```python
+featureDefn = LAYER.GetLayerDefn()
+featureDefn.AddFieldDefn(ogr.FieldDefn('NAME', ogr.OFTString))
+featureDefn.AddFieldDefn(ogr.FieldDefn('TRUC', ogr.OFTString))
+
+covr_f.SetFieldString(0,'Hello')
+covr_f.SetFieldString(1,'World')
+
+LAYER.CreateFeature(covr_f)
+
+DATASOURCE.Destroy()
+```
+
 # Poste de dev
 
 * Ubuntu 20.04 (focal)
