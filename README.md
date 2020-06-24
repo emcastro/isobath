@@ -15,6 +15,7 @@ Construction d'isobath en fonction de contraintes diverses à partir d'un grid b
 # Docs
 
 * https://pcjericks.github.io/py-gdalogr-cookbook/
+* https://gdal.org/tutorials/index.html
 * https://gdal.org/api/index.html#id3
 * https://www.programcreek.com/python/index/8908/osgeo.ogr
 * https://www.programcreek.com/python/index/6873/gdal
@@ -33,8 +34,12 @@ Construction d'isobath en fonction de contraintes diverses à partir d'un grid b
   Dans le zip https://charts.noaa.gov/ENCs/MA_ENCs.zip
 * Bathy : http://pubs.usgs.gov/of/2012/1157/GIS_catalog/SourceData/bathy/bathy_30m.zip
 
-La zone couverte est accessible via M_COVR avec CATCOV = 1 (valider qu'il est unique)
+### Zone couverte
+* La zone couverte est accessible via M_COVR avec CATCOV = 1 (valider qu'il est unique)
 
+### Trait de côte
+* Le trait de côte est interompu : il est intermittant. Soit il se superpose à la zone −2,9, ou à la zone 0. Donc en cas, d'interruption, il faut regarder la ligne qui est dessous, et continuer jusqu'à retrouver un autre segment du trait de côte. 
+* Une approche alternative est de prendre le trait 0 et de comparer avec la bathy.
 
 # Trucs
 
