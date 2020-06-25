@@ -10,7 +10,9 @@ Construction d'isobath en fonction de contraintes diverses à partir d'un grid b
   * https://pcjericks.github.io/py-gdalogr-cookbook/raster_layers.html#clip-a-geotiff-with-shapefile
   * https://www.youtube.com/watch?v=n33MswNARkE
 
-* Apprendre à écrire des fichers Raster & Vector
+* Apprendre à écrire des fichers ~~Raster~~ & Vector
+
+* Parcourir les géométries des features DEPARE et filtrer en fonction de la valeur de Bathy.
 
 # Docs
 
@@ -24,7 +26,7 @@ Construction d'isobath en fonction de contraintes diverses à partir d'un grid b
 
 * Découper des fichiers de grids et de vectoriels pour faire des tests du des petits volumes
 * Lister les resources de données (pour ne pas les mettre dans Git)
-* Tester les algos de GRASS, GDAL et SAGA
+* Tester les algos de ~~GRASS~~, GDAL et ~~SAGA~~
 
 # Données de test
 
