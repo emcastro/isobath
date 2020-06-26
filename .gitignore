@@ -2,5 +2,7 @@ python
 saga
 data
 data_archive
+profile.log
+__pycache__
 *~
 *-checkpoint.*

@@ -30,6 +30,7 @@ Construction d'isobath en fonction de contraintes diverses à partir d'un grid b
 * https://rasterio.readthedocs.io/en/latest/
 * https://stackoverflow.com/questions/4681737/how-to-calculate-the-area-of-a-polygon-on-the-earths-surface-using-python
 * https://spacetelescope.github.io/spherical_geometry/spherical_geometry/user.html
+* https://gist.github.com/sgillies/7e5cd548110a5b4d45ac1a1d93cb17a3
 
 # Compétences
 
