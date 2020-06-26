@@ -3,3 +3,4 @@ saga
 data
 data_archive
 *~
+*-checkpoint.*

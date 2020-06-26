@@ -16,11 +16,18 @@ Construction d'isobath en fonction de contraintes diverses à partir d'un grid b
 
 # Docs
 
+## GDAL/OGR
 * https://pcjericks.github.io/py-gdalogr-cookbook/
 * https://gdal.org/tutorials/index.html
 * https://gdal.org/api/index.html#id3
 * https://www.programcreek.com/python/index/8908/osgeo.ogr
 * https://www.programcreek.com/python/index/6873/gdal
+
+## Général
+* https://hub.packtpub.com/libraries-for-geospatial-analysis/
+* https://shapely.readthedocs.io/en/latest/project.html
+* https://fiona.readthedocs.io/en/latest/README.html
+* https://rasterio.readthedocs.io/en/latest/
 
 # Compétences
 

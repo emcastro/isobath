@@ -1,4 +1,7 @@
 jupyter>=1.0
+jupyterlab>=2.1
+ansible>=2.8
 numpy>=1.18
 gdal==3.0.4
-ansible>=2.8
+fiona>=1.8
+rasterio>=1.1

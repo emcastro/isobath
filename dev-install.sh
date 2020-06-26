@@ -10,7 +10,7 @@ set -e
 [[ $FAIL ]] && echo && echo Build failed && exit 1
 
 # Build Ansible Python environment
-if [[ ! -d python ]] ; then
+if [[ ! -d python ]] ; then # if directory `python` does not exist
     virtualenv python
 fi 
 
