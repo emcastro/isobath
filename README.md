@@ -28,6 +28,8 @@ Construction d'isobath en fonction de contraintes diverses à partir d'un grid b
 * https://shapely.readthedocs.io/en/latest/project.html
 * https://fiona.readthedocs.io/en/latest/README.html
 * https://rasterio.readthedocs.io/en/latest/
+* https://stackoverflow.com/questions/4681737/how-to-calculate-the-area-of-a-polygon-on-the-earths-surface-using-python
+* https://spacetelescope.github.io/spherical_geometry/spherical_geometry/user.html
 
 # Compétences
 
@@ -73,6 +75,13 @@ LAYER.CreateFeature(covr_f)
 DATASOURCE.Destroy()
 ```
 
+## Reprojection fichier
+
+```
+%time x=gdal.VectorTranslate('toto.gpkg', 'data/ENC_ROOT/US4MA13M/US4MA13M.000', options = gdal.VectorTranslateOptions(layers='DEPARE', dstSRS='EPSG:32619'))
+del x
+```
+
 # Poste de dev
 
 * Ubuntu 20.04 (focal)
@@ -80,7 +89,6 @@ DATASOURCE.Destroy()
   * Installé depuis https://qgis.org/ubuntu
   * ```bash
     sudo add-apt-repository https://qgis.org/ubuntu
-    sudo apt update
     sudo apt install qgis qgis-plugin-grass
     ```
 

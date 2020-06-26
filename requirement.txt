@@ -5,3 +5,5 @@ numpy>=1.18
 gdal==3.0.4
 fiona>=1.8
 rasterio>=1.1
+shapely>=1.7
+geopanas>=0.8
