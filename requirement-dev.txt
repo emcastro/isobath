@@ -1,0 +1,4 @@
+jupyter>=1.0
+jupyterlab>=2.1
+ansible>=2.8
+pylint

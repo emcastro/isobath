@@ -17,6 +17,7 @@ fi
 # shellcheck disable=SC1091
 source python/bin/activate
 
+pip install -r requirement-dev.txt
 pip install -r requirement.txt
 
 ansible-playbook -i ansible/local_inventory.yml ansible/setup_playbook.yml
